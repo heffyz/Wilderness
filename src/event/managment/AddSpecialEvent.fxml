@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="650.0" prefWidth="1100.0" style="-fx-background-color: #b4dcbc; -fx-border-color: #6b6b64;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="event.managment.FXMLDocumentController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="2.0" layoutY="52.0" pannable="true" prefHeight="598.0" prefWidth="1098.0" stylesheets="@AddSpecialEvent.css" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="632.0" prefWidth="1083.0" />
+        </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="53.0" prefWidth="1103.0" style="-fx-background-color: #dcefe0; -fx-border-color: #badec1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow height="16.44" radius="3.6100000000000003" width="0.0" />
+         </effect>
+         <children>
+            <JFXButton layoutX="33.0" layoutY="8.0">
+               <graphic>
+                  <FontAwesomeIconView fontSmoothingType="LCD" glyphName="CARET_LEFT" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIconView fill="#303d68" glyphName="REMOVE" layoutX="1069.0" layoutY="35.0" onMouseClicked="#close_app" size="25" AnchorPane.rightAnchor="14.35714340209961" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

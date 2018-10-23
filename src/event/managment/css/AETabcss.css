@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 mars 2018, 02:44:18
+    Author     : esprit
+*/
+#tabpane
+{
+    -fx-tab-max-height: 5em;
+    -fx-tab-min-height: 5em;
+
+}
+.tab .tab-label {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+  
+      -fx-text-fill: #1c4464;
+}
+.tab:selected .tab-label{
+     -fx-text-fill: #b4dcbc;
+    
+    
+}
+.tab
+{
+    
+    -fx-background-color:     #b4dcbc;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-padding: 0 30 0 30;
+  
+    
+}
+.tab:selected
+{
+    -fx-background-color: #1c4464;
+   -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-border-width: 5 0 0 0;
+    -fx-focus-color : transparent;
+    
+}
+.tab:focused
+{
+    -fx-focus-color : transparent;
+    
+    
+}
+.tab-pane *.tab-header-background{
+    -fx-background-color: transparent
+    
+}
+.tab-pane:top *.tab-header-area{
+    -fx-background-insets: 0 0 0 10;
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-focus-color : transparent;}
